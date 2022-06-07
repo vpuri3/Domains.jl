@@ -34,5 +34,5 @@ num_boundaries(dom::IntervalDomain) = 2
 
 function domains_match(int1::IntervalDomain, int2::IntervalDomain)
     bools = isapprox.(endpoints.((int1, int2))...)
-    *(bools...)
+    ×(bools...)
 end

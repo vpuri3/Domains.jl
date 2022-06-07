@@ -9,7 +9,7 @@ import UnPack: @unpack
 import Setfield: @set!
 
 # overload
-import Base: ∈, *, length
+import Base: ∈, ×, length
 import Base: summary, display
 
 # wrap
@@ -19,6 +19,7 @@ using IntervalSets
 # ref
 # https://github.com/SciML/ModelingToolkit.jl/blob/master/src/domains.jl
 # https://github.com/JuliaSymbolics/Symbolics.jl/blob/master/src/domains.jl
+# https://github.com/JuliaSymbolics/SymbolicUtils.jl/blob/master/test/basics.jl#L65-L81
 
 include("common.jl")
 include("interval.jl")
