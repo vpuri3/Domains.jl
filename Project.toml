@@ -5,3 +5,6 @@ version = "0.1.0"
 
 [deps]
 DomainSets = "5b8099bc-c8ec-5219-889f-1d9e522a28bf"
+IntervalSets = "8197267c-284f-5f27-9208-e0e47529a953"
+Setfield = "efcf1570-3423-57d1-acb7-fd33fddbac46"
+UnPack = "3a884ed6-31ef-47d7-9d2a-63182c4928ed"
