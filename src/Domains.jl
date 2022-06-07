@@ -3,6 +3,8 @@ module Domains
 """ D-Dimensional domain """
 abstract type AbstractDomain{T,D} end
 
+using Symbolics
+
 import UnPack: @unpack
 import Setfield: @set!
 
