@@ -9,7 +9,7 @@ import UnPack: @unpack
 import Setfield: @set!
 
 # overload
-import Base: ∈, ×, length
+import Base: ∈, length
 import Base: summary, display
 
 # wrap
