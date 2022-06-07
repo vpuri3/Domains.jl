@@ -2,3 +2,6 @@ name = "Domains"
 uuid = "da7fdc33-f0d3-4f59-913a-956844f4432b"
 authors = ["Vedant Puri <vedantpuri@gmail.com>"]
 version = "0.1.0"
+
+[deps]
+DomainSets = "5b8099bc-c8ec-5219-889f-1d9e522a28bf"

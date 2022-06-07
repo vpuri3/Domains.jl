@@ -1,7 +1,10 @@
 module Domains
 
-""" $D dimensional domain """
+""" D-Dimensional domain """
 abstract type AbstractDomain{T,D} end
+
+# wrap
+using DomainSets
 
 import Base: *
 
