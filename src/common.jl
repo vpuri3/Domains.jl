@@ -70,3 +70,13 @@ ret:
 """
 function domains_match end
 
+"""
+Applies a tag dict to a domain
+
+args:
+    AbstractDomain
+    tag_dict
+ret:
+    AbstractDomain
+"""
+function tag end

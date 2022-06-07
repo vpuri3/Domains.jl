@@ -10,7 +10,7 @@ struct IntervalDomain{T<:Number,Ttag} <: AbstractDomain{T,1}
     periodic::Bool
     bdry_tags::Ttag
 
-    function IntervalDomain(x0::Number, x1::Number, periodic, bdry_tags)
+    function IntervalDomain(x0::Number, x1::Number, periodic, bdry_tags = Dict(Pair{Symbol, AbstractTag}[]))
         T = promote_type(eltype.((x0, x1))...)
         new{T,typeof(bdry_tags)}(T(x0), T(x1), periodic, bdry_tags)
     end
@@ -36,3 +36,5 @@ function domains_match(int1::IntervalDomain, int2::IntervalDomain)
     bools = isapprox.(endpoints.((int1, int2))...)
     ×(bools...)
 end
+
+tag(dom::IntervalDomain, tags) = IntervalDomain(dom.x0, dom.x1, dom.periodic, tags)
